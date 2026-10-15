@@ -42,7 +42,7 @@ describe('release configuration', () => {
     expect(changesetConfig).toMatchObject({
       access: 'public',
       baseBranch: 'main',
-      changelog: '@changesets/cli/changelog',
+      changelog: '../scripts/changelog.mjs',
       commit: false,
       fixed: [],
       linked: [],
