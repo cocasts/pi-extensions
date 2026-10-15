@@ -1,6 +1,6 @@
 {
   "name": "@cocasts/pi-image-view",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Paste screenshots into pi without file paths — [🖼 #N] icon markers, uniform-size draft previews, clickable history, and compact model thumbnails",
   "author": "moecasts <moecasts.caster@gmail.com>",
   "keywords": [

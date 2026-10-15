@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.1
+
+### Patch Changes
+
+- refactor(image-view): move extension entry into source directory
+- docs(image-view): document npm installation
+
 ## 0.1.0
 
 - Add atomic `[🖼️ #N]` image markers with stable per-image colors.
