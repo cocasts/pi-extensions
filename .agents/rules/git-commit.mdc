@@ -38,6 +38,12 @@ alwaysApply: false
 - Use the package scope for package documentation, such as
   `docs(image-view): update usage instructions`.
 
+## Extension package releases
+
+When publishing an extension package, use:
+
+`chore(plugin-name): bump version to X.Y.Z`
+
 ## Commit ordering in multi-commit plans
 
 Plan commits in dependency order, with `docs` commits first.

@@ -1,0 +1,51 @@
+---
+trigger: model_decision
+description: Apply when creating or maintaining packages under packages/pi-*.
+alwaysApply: false
+---
+
+# Pi Package Conventions
+
+## Package rules
+
+- Use `packages/pi-{plugin-name}/` and colocate its metadata, docs, tests, and resources.
+- Create only the resource directories the package provides, and keep the
+  `files` and `pi` manifest entries aligned with them.
+
+## Canonical layout
+
+```text
+packages/pi-{plugin-name}/
+├── package.json
+├── README.md
+├── CHANGELOG.md
+├── LICENSE
+├── extensions/             # When the package provides an extension
+│   └── {plugin-name}/
+│       ├── index.ts
+│       └── <implementation-file>.ts
+├── skills/                 # When the package provides skills
+│   └── <skill-name>/
+│       └── SKILL.md
+├── prompts/                # When the package provides prompts
+│   └── <prompt-name>.md
+├── themes/                 # When the package provides themes
+│   └── <theme-name>.json
+└── test/
+```
+
+## Manifest contract
+
+Start from this shape; omit paths and `pi` keys for resource types the package does not provide:
+
+```json
+{
+  "files": ["extensions/", "skills/", "prompts/", "themes/", "README.md", "CHANGELOG.md", "LICENSE"],
+  "pi": {
+    "extensions": ["./extensions/{plugin-name}/index.ts"],
+    "skills": ["./skills"],
+    "prompts": ["./prompts/*.md"],
+    "themes": ["./themes/*.json"]
+  }
+}
+```
