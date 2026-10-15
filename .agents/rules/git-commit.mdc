@@ -1,0 +1,50 @@
+---
+trigger: model_decision
+description: Apply when planning or creating Git commits.
+alwaysApply: false
+---
+
+# Git Commit Rules
+
+## Format
+
+`type(scope): description`
+
+- Use lowercase English only.
+- Write a subject line only, with no body.
+- Do not add trailers such as `Co-Authored-By` or `Signed-off-by`.
+
+## Types
+
+`feat`, `fix`, `refactor`, `chore`, `docs`, `style`, `test`, `perf`, `ci`,
+`build`
+
+## Scopes
+
+- Use `root` for repository-wide files and `image-view` for
+  `packages/pi-image-view`.
+- For a future `packages/pi-<name>` workspace, remove the `pi-` prefix to
+  derive its scope.
+- Prefer `scope/module`, such as `image-view/clipboard`,
+  `image-view/gallery`, or `root/biome`.
+- Use `root/agents` for `AGENTS.md`, `.agents/**`, and agent-specific adapters.
+- Use a bare scope only when a change genuinely spans multiple modules in it.
+- For cross-scope changes, use comma-separated bare scopes only:
+  `chore(root,image-view): update test tooling`.
+
+## Type-specific scope rules
+
+- Use `docs(root)` for top-level documentation and `docs/**`.
+- Use the package scope for package documentation, such as
+  `docs(image-view): update usage instructions`.
+
+## Commit ordering in multi-commit plans
+
+Plan commits in dependency order, with `docs` commits first.
+
+## Examples
+
+- `feat(image-view/clipboard): support animated image paste`
+- `fix(image-view/gallery): preserve preview order`
+- `chore(root/agents): add git commit rules`
+- `build(root): update bun workspace config`
