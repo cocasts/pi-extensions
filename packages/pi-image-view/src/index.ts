@@ -2,12 +2,12 @@ import { existsSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 import { convertToPng, resizeImage } from '@earendil-works/pi-coding-agent';
 import { getCapabilities, matchesKey } from '@earendil-works/pi-tui';
-import { createAtomicMarkerEditor } from './src/atomic-editor.ts';
-import { putImageBlob, resolveImageReference } from './src/blob-store.ts';
-import { canReadDirectClipboard, readDirectClipboard } from './src/clipboard.ts';
-import { registerImagePreviewExtension } from './src/extension-runtime.ts';
-import { type ImageResizer, loadImage } from './src/image-content.ts';
-import { resizeForDetail, resizeForPreview } from './src/preview-resize.ts';
+import { createAtomicMarkerEditor } from './atomic-editor.ts';
+import { putImageBlob, resolveImageReference } from './blob-store.ts';
+import { canReadDirectClipboard, readDirectClipboard } from './clipboard.ts';
+import { registerImagePreviewExtension } from './extension-runtime.ts';
+import { type ImageResizer, loadImage } from './image-content.ts';
+import { resizeForDetail, resizeForPreview } from './preview-resize.ts';
 
 // pi bundles the WASM image resizer and PNG converter and exposes them on its
 // package entry. The extension is loaded through jiti, which aliases the
