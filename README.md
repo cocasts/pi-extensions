@@ -7,6 +7,7 @@ A monorepo of [pi coding agent](https://pi.dev) extensions (pi packages), manage
 | Package | Path | Description |
 | --- | --- | --- |
 | `@cocasts/pi-image-view` | [`packages/pi-image-view`](packages/pi-image-view) | Paste image previews with `[🖼 #N]` icon markers and uniform-size thumbnails above the editor |
+| `@cocasts/pi-themes` | [`packages/pi-themes`](packages/pi-themes) | Curated pi color themes, including the classic dark Nord theme |
 
 ## Development
 
@@ -25,6 +26,12 @@ Try a package in pi without installing:
 
 ```bash
 pi -e ./packages/pi-image-view
+```
+
+Install a local theme package, then select its theme through `/settings`:
+
+```bash
+pi install ./packages/pi-themes
 ```
 
 ## Adding a package

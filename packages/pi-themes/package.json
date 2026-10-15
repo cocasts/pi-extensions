@@ -1,0 +1,39 @@
+{
+  "name": "@cocasts/pi-themes",
+  "version": "0.0.0",
+  "description": "Curated color themes for the pi coding agent",
+  "author": "moecasts <moecasts.caster@gmail.com>",
+  "keywords": [
+    "pi-package",
+    "pi-coding-agent",
+    "pi",
+    "theme",
+    "themes",
+    "nord"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "files": [
+    "themes/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "themes": [
+      "./themes/*.json"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "vitest": "^4.1.9"
+  }
+}
