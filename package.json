@@ -5,6 +5,7 @@
   "description": "Monorepo of pi coding agent extensions (pi packages)",
   "author": "moecasts <moecasts.caster@gmail.com>",
   "type": "module",
+  "packageManager": "bun@1.4.3",
   "workspaces": [
     "packages/*"
   ],
@@ -16,12 +17,20 @@
     "format": "biome format --write .",
     "format:check": "biome format .",
     "check": "biome check .",
-    "verify": "bun run typecheck && bun run check && bun run test"
+    "verify": "bun run typecheck && bun run check && bun run test",
+    "changeset": "changeset",
+    "changeset:auto": "bun scripts/changeset-auto.ts",
+    "version-packages": "changeset version && bun install",
+    "release": "bun run verify && changeset publish"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.15",
+    "@changesets/cli": "^3.0.3",
+    "@changesets/read": "^1.0.1",
+    "@changesets/write": "^1.0.1",
     "@earendil-works/pi-coding-agent": "1.2.0",
     "@earendil-works/pi-tui": "1.2.0",
+    "@manypkg/get-packages": "^3.1.0",
     "@types/node": "^22.10.0",
     "typescript": "^7.0.2",
     "vitest": "^4.1.9"

@@ -37,6 +37,30 @@ pi -e ./packages/pi-image-view
 
 See [pi packages docs](https://pi.dev/docs/packages) for the manifest reference.
 
+## Releasing
+
+This repository uses [Changesets](https://github.com/changesets/changesets) with independent package versions.
+
+For every pull request that changes a published package:
+
+```bash
+bun run changeset:auto
+```
+
+Run the command after committing the pull request changes. It compares the
+commits with `origin/main`, detects the affected packages, and maps
+Conventional Commits to SemVer (`feat` → minor, breaking changes → major, and
+other supported types → patch). Commit the generated `.changeset/*.md` files
+with the pull request.
+
+Use `bun run changeset` when a release needs a manually selected package,
+version bump, or summary. Repository-only changes do not need a changeset.
+
+After changes reach `main`, the release workflow creates or updates a release
+pull request containing package version and changelog updates. Merging that
+pull request publishes the packages to npm. The repository must define an
+`NPM_TOKEN` Actions secret with publish access.
+
 ## Author
 
 **moecasts** — <moecasts.caster@gmail.com>
