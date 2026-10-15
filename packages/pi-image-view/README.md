@@ -29,11 +29,10 @@ The model receives the `[🖼️ #N]` reference plus a compact 480px thumbnail a
 ## Installation
 
 ```bash
-# from a local checkout of this monorepo
-pi install ./packages/pi-image-view
+pi install npm:@cocasts/pi-image-view
 
-# or try it for one run
-pi -e ./packages/pi-image-view
+# or try it for one run without installing
+pi -e npm:@cocasts/pi-image-view
 ```
 
 If pi is already running, `/reload` picks up a fresh install.
