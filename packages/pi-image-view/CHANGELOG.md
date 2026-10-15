@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.2
+
+### Patch Changes
+
+- 1f5597d: refactor(image-view): organize extension resource layout
+
 ## 0.1.1
 
 ### Patch Changes
