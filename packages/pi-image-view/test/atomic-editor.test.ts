@@ -54,7 +54,11 @@ vi.mock('@earendil-works/pi-coding-agent', () => {
 
 import { CustomEditor } from '@earendil-works/pi-coding-agent';
 import { visibleWidth } from '@earendil-works/pi-tui';
-import { createAtomicMarkerEditor, enhanceAtomicMarkerEditor, ImageViewAtomicEditor } from '../src/atomic-editor.ts';
+import {
+  createAtomicMarkerEditor,
+  enhanceAtomicMarkerEditor,
+  ImageViewAtomicEditor,
+} from '../extensions/image-view/atomic-editor.ts';
 
 const keys = {
   matches(data: string, action: string) {

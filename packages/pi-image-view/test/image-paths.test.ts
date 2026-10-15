@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { extractImagePaths, normalizeDetectedImagePath } from '../src/image-paths.ts';
+import { extractImagePaths, normalizeDetectedImagePath } from '../extensions/image-view/image-paths.ts';
 
 describe('image path detection', () => {
   it('detects a plain absolute image path', () => {

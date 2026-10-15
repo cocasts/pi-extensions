@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { IMAGE_COLOR_TOKENS, imageColorToken } from '../src/image-colors.ts';
-import { colorizeMarkerLine, imageMarkerNumber } from '../src/marker.ts';
+import { IMAGE_COLOR_TOKENS, imageColorToken } from '../extensions/image-view/image-colors.ts';
+import { colorizeMarkerLine, imageMarkerNumber } from '../extensions/image-view/marker.ts';
 
 describe('stable image colors', () => {
   it('maps positive marker numbers to a stable cycling theme palette', () => {

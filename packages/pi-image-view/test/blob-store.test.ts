@@ -2,7 +2,7 @@ import { mkdtemp, readFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { putImageBlob, resolveImageReference } from '../src/blob-store.ts';
+import { putImageBlob, resolveImageReference } from '../extensions/image-view/blob-store.ts';
 
 const image = { type: 'image' as const, data: Buffer.from('same-image').toString('base64'), mimeType: 'image/png' };
 

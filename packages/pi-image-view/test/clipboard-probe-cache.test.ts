@@ -25,7 +25,7 @@ describe('Linux backend probe cache', () => {
   });
 
   it('rediscovers a backend installed after a failed probe', async () => {
-    const { canReadDirectClipboard } = await import('../src/clipboard.ts');
+    const { canReadDirectClipboard } = await import('../extensions/image-view/clipboard.ts');
 
     await expect(canReadDirectClipboard(linuxEnv, 'linux')).resolves.toBe(false);
     installed.add('/bin/wl-paste');
@@ -33,7 +33,7 @@ describe('Linux backend probe cache', () => {
   });
 
   it('serves a successful probe from cache without rescanning PATH', async () => {
-    const { canReadDirectClipboard } = await import('../src/clipboard.ts');
+    const { canReadDirectClipboard } = await import('../extensions/image-view/clipboard.ts');
     const { stat } = await import('node:fs/promises');
     installed.add('/bin/wl-paste');
 
@@ -45,7 +45,7 @@ describe('Linux backend probe cache', () => {
   });
 
   it('ignores a cached backend when the display environment changes', async () => {
-    const { canReadDirectClipboard } = await import('../src/clipboard.ts');
+    const { canReadDirectClipboard } = await import('../extensions/image-view/clipboard.ts');
     installed.add('/bin/wl-paste');
 
     await expect(canReadDirectClipboard(linuxEnv, 'linux')).resolves.toBe(true);

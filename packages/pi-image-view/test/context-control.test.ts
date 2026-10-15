@@ -7,8 +7,8 @@ vi.mock('@earendil-works/pi-tui', () => ({
   getCellDimensions: () => ({ width: 0, height: 0 }),
 }));
 
-import { sanitizeModelMessages } from '../src/attachment-links.ts';
-import { registerImagePreviewExtension } from '../src/extension-runtime.ts';
+import { sanitizeModelMessages } from '../extensions/image-view/attachment-links.ts';
+import { registerImagePreviewExtension } from '../extensions/image-view/extension-runtime.ts';
 
 const image = (data: string) => ({ type: 'image', data, mimeType: 'image/png' });
 

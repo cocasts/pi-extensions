@@ -47,7 +47,7 @@ describe('automatic changesets', () => {
       { hash: 'b', subject: 'fix(root): update tooling', body: 'fix(root): update tooling' },
     ];
     const filesByCommit = new Map([
-      ['a', ['packages/pi-image-view/src/index.ts']],
+      ['a', ['packages/pi-image-view/extensions/image-view/index.ts']],
       ['b', ['package.json']],
     ]);
 
