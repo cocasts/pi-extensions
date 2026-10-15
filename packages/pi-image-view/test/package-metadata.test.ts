@@ -23,7 +23,7 @@ describe('package metadata', () => {
   it('publishes package discovery metadata for the Pi Gallery', () => {
     expect(packageJson.name).toBe('@cocasts/pi-image-view');
     expect(packageJson.author).toBe('moecasts <moecasts.caster@gmail.com>');
-    expect(packageJson.pi?.extensions).toEqual(['./src/index.ts']);
+    expect(packageJson.pi?.extensions).toEqual(['./extensions/image-view/index.ts']);
     expect(packageJson.keywords).toContain('pi-package');
     expect(packageJson.publishConfig?.access).toBe('public');
   });

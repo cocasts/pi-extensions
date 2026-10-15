@@ -6,7 +6,7 @@ import {
   readDirectClipboard,
   supportsDirectClipboard,
   TEXT_CLIPBOARD_MAX_BYTES,
-} from '../src/clipboard.ts';
+} from '../extensions/image-view/clipboard.ts';
 
 const linuxEnv = { PATH: '/bin', WAYLAND_DISPLAY: 'wayland-0' };
 

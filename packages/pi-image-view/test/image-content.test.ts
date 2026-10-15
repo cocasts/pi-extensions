@@ -1,6 +1,6 @@
 import fsp from 'node:fs/promises';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { loadImage } from '../src/image-content.ts';
+import { loadImage } from '../extensions/image-view/image-content.ts';
 
 vi.mock('node:fs/promises', () => ({
   default: {

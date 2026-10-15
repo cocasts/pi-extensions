@@ -7,7 +7,7 @@ vi.mock('@earendil-works/pi-tui', () => ({
   getCellDimensions: () => ({ width: 0, height: 0 }),
 }));
 
-import { registerImagePreviewExtension } from '../src/extension-runtime.ts';
+import { registerImagePreviewExtension } from '../extensions/image-view/extension-runtime.ts';
 
 type Handler = (...args: any[]) => any;
 

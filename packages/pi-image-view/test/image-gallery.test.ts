@@ -14,7 +14,7 @@ vi.mock('@earendil-works/pi-tui', async (importOriginal) => {
 });
 
 import { visibleWidth } from '@earendil-works/pi-tui';
-import { ImageGallery, THUMB_COLUMNS } from '../src/image-gallery.ts';
+import { ImageGallery, THUMB_COLUMNS } from '../extensions/image-view/image-gallery.ts';
 
 const plain = (text: string) => text;
 const theme = {

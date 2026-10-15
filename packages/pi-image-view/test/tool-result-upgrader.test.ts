@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest';
-import { upgradeScreenshotToolResult } from '../src/tool-result-upgrader.ts';
+import { upgradeScreenshotToolResult } from '../extensions/image-view/tool-result-upgrader.ts';
 
 const image = (data: string) => ({ type: 'image' as const, data, mimeType: 'image/png' });
 

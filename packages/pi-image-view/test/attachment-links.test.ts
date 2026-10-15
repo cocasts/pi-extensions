@@ -4,7 +4,7 @@ import {
   renderImageMarkerLinks,
   sanitizeModelMessages,
   stripImageMarkerLinks,
-} from '../src/attachment-links.ts';
+} from '../extensions/image-view/attachment-links.ts';
 
 describe('attachment links', () => {
   const ref = `image-view://sha256/${'a'.repeat(64)}.png`;

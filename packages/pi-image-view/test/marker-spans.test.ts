@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { imageMarkerText } from '../src/marker.ts';
-import { imageMarkerSpans, markerSpanAt, segmentAtomicImageMarkers } from '../src/marker-spans.ts';
+import { imageMarkerText } from '../extensions/image-view/marker.ts';
+import { imageMarkerSpans, markerSpanAt, segmentAtomicImageMarkers } from '../extensions/image-view/marker-spans.ts';
 
 describe('atomic image markers', () => {
   it('segments a marker as one editor token', () => {

@@ -2,8 +2,8 @@ import { describe, expect, it, vi } from 'vitest';
 
 vi.mock('@earendil-works/pi-tui', () => ({}));
 
-import { type GalleryClock, GalleryPresenter } from '../src/gallery-presenter.ts';
-import type { ImageGallery } from '../src/image-gallery.ts';
+import { type GalleryClock, GalleryPresenter } from '../extensions/image-view/gallery-presenter.ts';
+import type { ImageGallery } from '../extensions/image-view/image-gallery.ts';
 
 const image = (key: string) => ({ key, data: key, mimeType: 'image/png' });
 

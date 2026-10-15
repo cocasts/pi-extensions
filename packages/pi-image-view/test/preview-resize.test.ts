@@ -6,7 +6,7 @@ import {
   PREVIEW_MAX_DIMENSION,
   resizeForDetail,
   resizeForPreview,
-} from '../src/preview-resize.ts';
+} from '../extensions/image-view/preview-resize.ts';
 
 const toBase64 = (text: string): string => Buffer.from(text).toString('base64');
 

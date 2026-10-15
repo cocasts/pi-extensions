@@ -26,14 +26,14 @@
     "typecheck": "tsc --noEmit"
   },
   "files": [
-    "src/",
+    "extensions/",
     "README.md",
     "CHANGELOG.md",
     "LICENSE"
   ],
   "pi": {
     "extensions": [
-      "./src/index.ts"
+      "./extensions/image-view/index.ts"
     ]
   },
   "peerDependencies": {
