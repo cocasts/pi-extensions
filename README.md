@@ -8,6 +8,7 @@ A monorepo of [pi coding agent](https://pi.dev) extensions (pi packages), manage
 | --- | --- | --- |
 | `@cocasts/pi-image-view` | [`packages/pi-image-view`](packages/pi-image-view) | Paste image previews with `[🖼 #N]` icon markers and uniform-size thumbnails above the editor |
 | `@cocasts/pi-themes` | [`packages/pi-themes`](packages/pi-themes) | Curated pi color themes, including the classic dark Nord theme |
+| `@cocasts/pi-status-line` | [`packages/pi-status-line`](packages/pi-status-line) | Modular multi-row status line — choose which modules sit on each row's left and right, with per-module label, format, and colour |
 
 ## Development
 

@@ -29,6 +29,18 @@
         "@earendil-works/pi-tui": "*",
       },
     },
+    "packages/pi-status-line": {
+      "name": "@cocasts/pi-status-line",
+      "version": "0.0.0",
+      "devDependencies": {
+        "@types/node": "^22.10.0",
+        "vitest": "^4.1.9",
+      },
+      "peerDependencies": {
+        "@earendil-works/pi-coding-agent": "*",
+        "@earendil-works/pi-tui": "*",
+      },
+    },
     "packages/pi-themes": {
       "name": "@cocasts/pi-themes",
       "version": "0.1.0",
@@ -134,6 +146,8 @@
     "@clack/prompts": ["@clack/prompts@1.8.1", "", { "dependencies": { "@clack/core": "1.5.1", "fast-string-width": "^3.0.2", "fast-wrap-ansi": "^0.2.0", "sisteransi": "^1.0.5" } }, "sha512-dlT1m5e/0yUL0kRNcQn7yGLVThkgbB0Ga/1AmfDDC/8ik6AIiSf2QLQO2zPYvefsHP0aFgxO93cVLCCfDp7kzQ=="],
 
     "@cocasts/pi-image-view": ["@cocasts/pi-image-view@workspace:packages/pi-image-view"],
+
+    "@cocasts/pi-status-line": ["@cocasts/pi-status-line@workspace:packages/pi-status-line"],
 
     "@cocasts/pi-themes": ["@cocasts/pi-themes@workspace:packages/pi-themes"],
 

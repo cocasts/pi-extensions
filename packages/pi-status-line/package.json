@@ -1,0 +1,46 @@
+{
+  "name": "@cocasts/pi-status-line",
+  "version": "0.0.0",
+  "description": "Modular multi-row status line for the pi coding agent — pick which modules sit on each row's left and right, and how each one is labelled and formatted",
+  "author": "moecasts <moecasts.caster@gmail.com>",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi-coding-agent",
+    "pi",
+    "status-line",
+    "statusline",
+    "footer",
+    "status",
+    "modular"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "files": [
+    "extensions/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/status-line/index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "vitest": "^4.1.9"
+  }
+}
