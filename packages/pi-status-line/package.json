@@ -1,6 +1,6 @@
 {
   "name": "@cocasts/pi-status-line",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Modular multi-row status line for the pi coding agent — pick which modules sit on each row's left and right, and how each one is labelled and formatted",
   "author": "moecasts <moecasts.caster@gmail.com>",
   "keywords": [
